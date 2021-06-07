@@ -1,0 +1,194 @@
+/*colors*/
+:root{
+    --title-blue: #10375D;
+    --subtitle-blue: #04647A;
+    --text-blue: #2C4D6F;
+}
+.container{
+    max-width: 296px;
+    padding: 0;
+    width: auto;
+    margin: 0 auto;
+}
+.resume{
+    font-family: 'Roboto Condensed', Arial;
+    margin: 0;
+}
+.resume__header{
+    text-align: center;
+    border-bottom: 1px solid var(--title-blue);
+}
+.resume__header h1{
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 16px;
+    margin-top: 24px;
+    color: var(--title-blue);
+}
+.resume__header h2{
+    font-size: 24px;
+    margin: 0;
+    font-weight: 300;
+    color: var(--subtitle-blue);
+}
+.resume__header h1,
+.resume__header h2{
+    color: var(--title-blue);
+    text-transform: uppercase;
+}
+.resume__header__links{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+.resume__header__links a{
+    margin-right: 20px;
+}
+.resume__header__links i{
+    font-size: 25px;
+    color: var(--subtitle-blue);
+}
+
+.resume__profile{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+.resume__profile img{
+    width: 130px;
+    height: auto;
+}
+.resume__profile h3{
+    color: var(--title-blue);
+    font-size: 24px;
+    text-align: left;
+}
+.resume__profile p{
+    color: var(--text-blue);
+    font-size: 18px;
+    text-align: justify;
+    max-width: 400px;
+}
+.resume__main{
+    display: flex;
+    flex-flow: row;
+    margin-top: 48px;  
+}
+.resume__main__nav{
+    width: 40%;
+    display: none;
+}
+.resume__main__nav nav{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.resume__main__nav nav a{
+    color: var(--text-blue);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 12px;
+    text-decoration: none;
+}
+.resume__main__articles{
+    width: 100%;
+}
+.resume__main__articles article h3{
+    color: var(--title-blue);
+    font-size: 24px;
+    background-color: rgba(16, 55, 93, 0.2);
+    padding: 10px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.resume__main__articles div{
+    margin-bottom: 32px;
+}
+.resume__main__articles article h4{
+    color: var(--subtitle-blue);
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 24px;
+}
+.resume__main__articles article h5{
+    color: var(--subtitle-blue);
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 16px;
+}
+.resume__main__articles article ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.resume__main__articles article ul li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.resume__main__articles article ul li p{
+    color: var(--text-blue);
+    font-size: 14px;
+}
+.resume__main__articles__languages{
+    display: flex;
+    flex-flow: column;
+}
+.resume__main__articles__languages__item{
+    margin-right: 64px;
+}
+@media only screen and (min-width: 1024px){
+    .container{
+        max-width: 1184px;
+    }
+    .resume__main__articles__languages{
+        display: flex;
+        flex-flow: row;
+    }
+    .resume__profile{
+        display: flex;
+        flex-flow: row;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+    }
+    .resume__profile h3{
+        color: var(--title-blue);
+        margin-left: 96px;
+        font-size: 24px;
+        text-align: left;
+    }
+    .resume__profile p{
+        color: var(--text-blue);
+        font-size: 18px;
+        margin-left: 96px;
+        text-align: justify;
+        max-width: 400px;
+    }
+    .resume__main__nav{
+        width: 40%;
+        display: block;
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
+        position: sticky;
+        height: 300px;
+        top: 90px;
+        bottom: auto;
+    }
+    .resume__main__articles{
+        width: 60%;
+    }
+}
